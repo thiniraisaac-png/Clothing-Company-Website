@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+    <script defer src="java1.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="deim4.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="deim4.jpg" alt="Thumbnail 1" onclick="changeMainImage('deim4.jpg')">
+                <!--imageeee 2-->
+                <img src="denim5.jpg" alt="Thumbnail 2" onclick="changeMainImage('denim5.jpg')">
+                <!--imageeee 3-->
+                <img src="denim6.jpg" alt="Thumbnail 2" onclick="changeMainImage('denim6.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>Rustler Men's Classic Relaxed Fit </h1>
+            <p class="price">LKR 5,000</p>
+            <p class="description"><br> Relaxed fit thru seat and thigh, 5 pocket styling, Straight leg, Heavy weight durable denim.<strong></strong></p>
+            <div class="payment-options">
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: BLUE / DARK BLUE </p><!--coloursss-->
+            <div class="color-options">
+                <a href="denim.html" class="link" target="_self"><img src="denim1.jpg" alt="Color Option 1"></a>
+                <a href="denim2.html" class="link" target="_self"><img src="deim4.jpg" alt="Color Option 2"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
