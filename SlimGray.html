@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="slim.css">
+    <script defer src="slim.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <img id="mainImage" src="SG1.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <img src="SG1.jpg" alt="Thumbnail 1" onclick="changeMainImage('SG1.jpg')">
+                <img src="SG2.jpg" alt="Thumbnail 2" onclick="changeMainImage('SG2.jpg')">
+                <img src="SG3.jpg" alt="Thumbnail 3" onclick="changeMainImage('SG3.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Slim-fit Trousers</h1>
+            <p class="price">LKR 5,000</p>
+            <p class="description"><br> BUSINESS CASUAL: These flat-front dress pants can be worn with a dress shirt or paired with a blazer. Wear with Amazon Essentials Men's Derbies and leather belts to accessorize.<strong></strong></p>
+            <div class="payment-options">
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: BROWN / GRAY / STONE</p>
+            <div class="color-options">
+                <a href="SlimBrown.html" class="link" target="_self"><img src="SB1.jpg" alt="Color Option 1"></a>
+                <a href="SlimStone.html" class="link" target="_self"><img src="SS1.jpg" alt="Color Option 2"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

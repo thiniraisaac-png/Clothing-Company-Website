@@ -1,0 +1,135 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.product-page {
+    display: flex;
+    gap: 40px;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Images */
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-images .main-image img {
+    width: 60%;
+    border-radius: 8px;
+}
+
+.product-images .thumbnail-images img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Product Details */
+.product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    color: #666;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+.payment-options img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.availability {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+.color-options img {
+    width: 30px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.size-options-title {
+    font-weight: bold;
+}
+
+.size-options button {
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background 0.3s;
+}
+
+.size-options button.active, 
+.size-options button:hover {
+    background: #000000;
+    color: #fff;
+    border-color: #000000;
+}
+
+.add-to-cart {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #444;
+}
+
+.shipping-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
