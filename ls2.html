@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="l7.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="l7.jpg" alt="Thumbnail 1" onclick="changeMainImage('l7.jpg')">
+                <!--imageeee 2-->
+                <img src="l8.jpg" alt="Thumbnail 2" onclick="changeMainImage('l8.jpg')">
+                <!--imageeee 3-->
+                <img src="l9.jpg" alt="Thumbnail 2" onclick="changeMainImage('l9.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>Legendary Whitetails Men's Buck Camp Flannel, Long Sleeve Plaid Button Down Casual Shirt, Corduroy Cuffs</h1>
+            <p class="price">LKR 3,000</p>
+            <p class="description"><br> Legendary Whitetails flannel shirt for men, recognized for its top-tier quality, is crafted from 100% soft brushed cotton flannel and promises warmth and breathability; This 5.1 ounce Buck Camp Flannel Shirt is ideally weighted for layering or standalone wear, indoors and out; Beyond its softness, its pill-resistant premium fabric quality ensures a consistently sharp look and lasting comfort
+                <strong></strong></p>
+            <div class="payment-options">
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Alpine Mountain Plaid / Mountain Charcoal Plaid / Racing Red Plaid</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="ls.html" class="link" target="_self"><img src="l1.jpg" alt="Color Option 1"></a>
+                <a href="ls1.html" class="link" target="_self"><img src="l4.jpg" alt="Color Option 2"></a>
+                <a href="ls2.html" class="link" target="_self"><img src="l7.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

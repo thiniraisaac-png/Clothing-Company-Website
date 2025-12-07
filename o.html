@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="o1.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="o1.jpg" alt="Thumbnail 1" onclick="changeMainImage('o1.jpg')">
+                <!--imageeee 2-->
+                <img src="o2.jpg" alt="Thumbnail 2" onclick="changeMainImage('o2.jpg')">
+                <!--imageeee 3-->
+                <img src="o3.jpg" alt="Thumbnail 2" onclick="changeMainImage('o3.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>YawYews Mens Fashion Short Sleeve Tshirts Workout Oversize Pullover Solid Color Casual Tees</h1>
+            <p class="price">LKR 3,000</p>
+            <p class="description"><br> Lightweight mockneck basic t-shirts with stylish design and various colours, perfect for daily wear, casual, vacation, date, parties, business, office, any grand festival or events etc.
+                <strong></strong></p>
+            <div class="payment-options">
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Army Green / Black / Brown</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="o.html" class="link" target="_self"><img src="o1.jpg" alt="Color Option 1"></a>
+                <a href="o1.html" class="link" target="_self"><img src="o4.jpg" alt="Color Option 2"></a>
+                <a href="o2.html" class="link" target="_self"><img src="o7.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="p7.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="p7.jpg" alt="Thumbnail 1" onclick="changeMainImage('p7.jpg')">
+                <!--imageeee 2-->
+                <img src="p8.jpg" alt="Thumbnail 2" onclick="changeMainImage('p8.jpg')">
+                <!--imageeee 3-->
+                <img src="p9.jpg" alt="Thumbnail 2" onclick="changeMainImage('p9.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+             <!--product description-->
+             <h1>MAGCOMSEN Men's Polo Shirt Quick Dry Performance Short Sleeve Tactical Shirts Pique Jersey Golf Shirt</h1>
+             <p class="price">LKR 5,000</p>
+             <p class="description"><br>  Classic polo shirts with 3-button placket and spread collar, a loop under the buttons suitable for hanging sunglasses or microphone, dual pen pockets on left sleeve for your convenience
+                 <strong></strong></p>
+             <div class="payment-options">
+                
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Apricot / Army Green / Black</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="p.html" class="link" target="_self"><img src="p1.jpg" alt="Color Option 1"></a>
+                <a href="p1.html" class="link" target="_self"><img src="p4.jpg" alt="Color Option 2"></a>
+                <a href="p2.html" class="link" target="_self"><img src="p7.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

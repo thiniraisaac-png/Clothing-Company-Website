@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="teallongpartydressfront.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="teallongpartydressfront.jpg" alt="Thumbnail 1" onclick="changeMainImage('teallongpartydressfront.jpg')">
+                <!--imageeee 2-->
+                <img src="teallongpartydressback.jpg" alt="Thumbnail 2" onclick="changeMainImage('teallongpartydressback.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>Cocktail Party Maxi Long Formal Dress</h1>
+            <p class="price">LKR 3,000</p>
+            <p class="description"><br>Polyester/Spandex,Fabric is Elasticity,Stretchy,Comfortable
+                Perfectly Fit For All The Occasions,Perfect Choice For Formal, Party, Cocktail, Prom, Wedding, Club, Christmas, Night Out, Evening, Birthday, Dating, Vacation, Homecoming And Other Occasions In Summer. Wearing This Graceful Dress Is Full Of Femininity.
+                <strong></strong></p>
+            <div class="payment-options">
+                
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Black / Blue / Red</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="partylongdress.html" class="link" target="_self"><img src="greenlongpartydressfront.jpg" alt="Color Option 1"></a>
+                <a href="partylongdress2.html" class="link" target="_self"><img src="teallongpartydressfront.jpg" alt="Color Option 2"></a>
+                <a href="partylongdress3.html" class="link" target="_self"><img src="bluelongpartydressfront.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
