@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Store Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Clothing Store</h1>
+
+    <div class="add-item">
+      <h2>Add Item</h2>
+      <label for="item-name">Item Name:</label>
+      <input type="text" id="item-name" placeholder="Enter item name">
+
+      <label for="item-color">Color:</label>
+      <input type="text" id="item-color" placeholder="Enter color">
+
+      <label for="item-size">Size:</label>
+      <select id="item-size">
+        <option value="S">Extra Small</option>
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">Extra Large</option>
+        <option value="S">2 Extra Large</option>
+      </select>
+
+      <label for="item-price">Price (LKR):</label>
+      <input type="number" id="item-price" placeholder="Enter price">
+
+      <button id="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Color</th>
+            <th>Size</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+      <div class="total">
+        <strong>Total: LKR<span id="total-price">0.00</span></strong>
+      </div>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #000000;
+}
+
+main {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input {
+    background: #333;
+    color: #fff;
+}
+
+button {
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.checkbox, .radio {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+.navbar {
+    position: absolute; 
+    font-size: 15px;
+    top: 0; 
+    right: -50px; 
+    padding: 10px; 
+    text-align: right; 
+    width: auto; 
+    z-index: 1000; 
+}
+
+.navbar ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 5px;
+    margin-right: 35px;
+}
+
+.navbar li {
+    display: inline; 
+    margin-right: 1em; 
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    padding: 5px; 
+    font-size: 22px; 
+}
+
+.navbar a:hover {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
+    border-radius: 20px; 
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="sleevecasual7.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="sleevecasual7.jpg" alt="Thumbnail 1" onclick="changeMainImage('sleevecasual7.jpg')">
+                <!--imageeee 2-->
+                <img src="sleevecasual8.jpg" alt="Thumbnail 2" onclick="changeMainImage('sleevecasual8.jpg')">
+                <!--imageeee 3-->
+                <img src="sleevecasual9.jpg" alt="Thumbnail 2" onclick="changeMainImage('sleevecasual9.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>Aiyino Hawaiian Shirt for Men, Tropical Holiday Short Sleeve Casual Button Down Beach Shirts </h1>
+            <p class="price">LKR 3,500</p>
+            <p class="description"><br> Hawaiian shirts is the freedom gained when separating yourself from the dull and emotionless fashion trends of the now. Made from lightweight and breathable fabrics, they allow air circulation and prevent overheating, ensuring you stay cool and stylish no matter the temperature.
+                <strong></strong></p>
+            <div class="payment-options">
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Seaside Blue / Parrot Blue / Leaf </p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="beachtro.html" class="link" target="_self"><img src="sleevecasual1.jpg" alt="Color Option 1"></a>
+                <a href="beachtro1.html" class="link" target="_self"><img src="sleevecasual4.jpg" alt="Color Option 2"></a>
+                <a href="beachtro2.html" class="link" target="_self"><img src="sleevecasual7.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

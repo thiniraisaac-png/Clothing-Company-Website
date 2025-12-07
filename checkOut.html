@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkOut.css">
+</head>
+<body>
+    <div class="navbar ">
+        <ul>
+          <li><a href="home.html" target="_self"><b>Back to Home Page</a></li>
+          <li><a href="cart.html" target="_self"><b>Previous</a></li>
+        </ul>        
+    </div>
+    <div class="container">
+        <header class="header">
+            <h1>BELA FONTE</h1>
+        </header>
+        <main>
+            <div class="checkout-form">
+                <h2>Contact</h2>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <div class="checkbox">
+                        <input type="checkbox" id="news" name="news">
+                        <label for="news">Email me with news and offers</label>
+                    </div>
+                    <h2>Delivery</h2>
+                    <label for="country">Country/Region</label>
+                    <select id="country" name="country" required>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Sri Lanka">India</option>
+                        <option value="Sri Lanka">Australia</option>
+                        <option value="Sri Lanka">United Kingdom</option>
+                        <option value="Sri Lanka">United States of America</option>
+                        <option value="Sri Lanka">United Arab Emirates</option>
+                        <option value="Sri Lanka">Japan</option>
+                        <option value="Sri Lanka">Russia</option>
+                        <option value="Sri Lanka">Brazil</option>
+                        <option value="Sri Lanka">France</option>
+                    </select>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                    <label for="apartment">Apartment, Suite, etc. (optional)</label>
+                    <input type="text" id="apartment" name="apartment">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                    <label for="postal-code">Postal Code (optional)</label>
+                    <input type="text" id="postal-code" name="postal-code">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div class="checkbox">
+                        <input type="checkbox" id="save-info" name="save-info">
+                        <label for="save-info">Save this information for next time</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="text-news" name="text-news">
+                        <label for="text-news">Text me with news and offers</label>
+                    </div>
+                    <h2>Shipping Method</h2>
+                    <div class="radio">
+                        <input type="radio" id="standard" name="shipping" value="Standard" checked>
+                        <label for="standard">Standard (2-3 Business Days) - Rs. 300.00</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="express" name="shipping" value="Express">
+                        <label for="express">Same Day Delivery (Express) - Rs. 700.00</label>
+                    </div>
+                    <h2>Payment</h2>
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Enter card number" required>
+                    <label for="expiration-date">Expiration Date (MM/YY)</label>
+                    <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+                    <label for="security-code">Security Code</label>
+                    <input type="text" id="security-code" name="security-code" placeholder="CVC" required>
+                    <button type="submit" class="pay-btn">Pay Now</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

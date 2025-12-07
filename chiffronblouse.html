@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="chiffron.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="chiffronbeigemd.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="chiffronbeigemd.jpg" alt="Thumbnail 1" onclick="changeMainImage('chiffronbeigemd.jpg')">
+                <!--imageeee 2-->
+                <img src="cbfront.jpg" alt="Thumbnail 2" onclick="changeMainImage('cbfront.jpg')">
+                <!--imageeee 3-->
+                <img src="cbback.jpg" alt="Thumbnail 2" onclick="changeMainImage('cbback.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>Women's Short Sleeve V-Neck 3/4 Sleeve Button Up Chiffon Floral Pleated Midi Swing Dress with Belt</h1>
+            <p class="price">LKR 3,000</p>
+            <p class="description"><br> <li>This summer casual floral print pleated knee length dress is featured with V-neck,button closure,3/4 sleeve,and big swing hemline.</li>
+                <li>Multi ways to wear:This women button top A-line swing dress comes with a adjustable drawstring belt. You can tie the drawstring to reveal the perfect waistline, or leave it off for a loose-fitting look for a slouchy, relaxed style.</li>
+                <strong></strong></p>
+            <div class="payment-options">
+                
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Black / Black(windmill) / Blue(windmill)</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="chiffronblouse.html" class="link" target="_self"><img src="cbfront.jpg" alt="Color Option 1"></a>
+                <a href="chiffronblue.html" class="link" target="_self"><img src="cbluefront.jpg" alt="Color Option 2"></a>
+                <a href="chiffronpink.html" class="link" target="_self"><img src="cpfront.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
