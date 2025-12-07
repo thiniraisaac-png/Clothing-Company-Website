@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="formallongdress.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="datedresspink.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="datedresspink.jpg" alt="Thumbnail 1" onclick="changeMainImage('datedresspink.jpg')">
+                <!--imageeee 2-->
+                <img src="datedresspinkmodel.jpg" alt="Thumbnail 2" onclick="changeMainImage('datedresspinkmodel.jpg')">
+                <!--imageeee 3-->
+                <img src="datedresspinkback.jpg" alt="Thumbnail 2" onclick="changeMainImage('datedresspinkback.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>Prom Maxi Long Dress</h1>
+            <p class="price">LKR 3,000</p>
+            <p class="description"><br> Flaterring dress - this Deep v neck maxi dress with slit is absolutely stunning! Perfect for any special occasion. We love its beautiful wide waistline and sexy side slit! So easy to style up with your favourite accessories and shoes!
+                <strong></strong></p>
+            <div class="payment-options">
+                
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Green / Blue / Pink</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="formallongdress.html" class="link" target="_self"><img src="datedressgreen.jpg" alt="Color Option 1"></a>
+                <a href="formallongdress2.html" class="link" target="_self"><img src="datedressbiege.jpg" alt="Color Option 2"></a>
+                <a href="formallongdress3.html" class="link" target="_self"><img src="datedresspink.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

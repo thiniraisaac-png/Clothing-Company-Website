@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page"> 
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="formalblousebiegefront.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="formalblousebiegefront.jpg" alt="Thumbnail 1" onclick="changeMainImage('formalblousebiegefront.jpg')">
+                <!--imageeee 2-->
+                <img src="formalblousebiegeback.jpg" alt="Thumbnail 2" onclick="changeMainImage('formalblousebiegeback.jpg')">
+                <!--imageeee 3-->
+                <img src="formalblousebiegemodel.jpg" alt="Thumbnail 2" onclick="changeMainImage('formalblousebiegemodel.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>Elegant Sleeveless Blouse Top</h1>
+            <p class="price">LKR 3,000</p>
+            <p class="description"><br> Perfect for going out, dating, work, party and casual dailywear.
+                <strong></strong></p>This is a stylish and elegant sleeveless satin top featuring a high neckline with a gathered design, offering a refined and sophisticated look. The lightweight and smooth fabric gives it a luxurious sheen, making it perfect for formal occasions, office wear, or pairing with trousers or skirts for a chic ensemble. The top combines comfort and style, ideal for a polished and professional appearance.
+            <div class="payment-options">
+                
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Green / Blue / Pink</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="formalblouse.html" class="link" target="_self"><img src="formalblousebiegefront.jpg" alt="Color Option 1"></a>
+                <a href="formalblouse2.html" class="link" target="_self"><img src="formalblouserose.jpg" alt="Color Option 2"></a>
+                <a href="formalblouse3.html" class="link" target="_self"><img src="formalbousepink.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
