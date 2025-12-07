@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="short7.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="short7.jpg" alt="Thumbnail 1" onclick="changeMainImage('short7.jpg')">
+                <!--imageeee 2-->
+                <img src="short8.jpg" alt="Thumbnail 2" onclick="changeMainImage('short8.jpg')">
+                <!--imageeee 3-->
+                <img src="short9.jpg" alt="Thumbnail 2" onclick="changeMainImage('short9.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>Essentials Men's Classic-Fit 9" Chino Short </h1>
+            <p class="price">LKR 2,000</p>
+            <p class="description"><br> Roomy through hip and thigh with straight leg. Sits at the waist. Zip fly with button at waist, front slant pockets, and button-through back welt pockets. INSEAM: 9" on US size 32.
+                <strong></strong></p>
+            <div class="payment-options">
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Khaki Brown / Blue / Black </p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="short.html" class="link" target="_self"><img src="short1.jpg" alt="Color Option 1"></a>
+                <a href="short1.html" class="link" target="_self"><img src="short4.jpg" alt="Color Option 2"></a>
+                <a href="short2.html" class="link" target="_self"><img src="short7.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

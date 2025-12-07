@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="q7.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="q7.jpg" alt="Thumbnail 1" onclick="changeMainImage('q7.jpg')">
+                <!--imageeee 2-->
+                <img src="q8.jpg" alt="Thumbnail 2" onclick="changeMainImage('q8.jpg')">
+                <!--imageeee 3-->
+                <img src="q9.jpg" alt="Thumbnail 2" onclick="changeMainImage('q9.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+           <!--product description-->
+           <h1>COOFANDY Men's Long Sleeve Button Down Linen Shirt Casual Untucked Chambray Shirt Wrinkle Free Wedding Shirts</h1>
+           <p class="price">LKR 4,000</p>
+           <p class="description"><br> Coofandy men's casual button down long sleeve shirt have been revolutionized, not only with the stylish texture of linen, but also softer, skin-friendly and wrinkle-resistant than linen fabrics; Lightweight, breathable, refreshing, loose-fitting, no fading, moisture wicking, no need for ironing and suitable for all seasons
+               <strong></strong></p>
+           <div class="payment-options">
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Alpine Mountain Plaid / Army / Barnwood Heather</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="q.html" class="link" target="_self"><img src="q1.jpg" alt="Color Option 1"></a>
+                <a href="q1.html" class="link" target="_self"><img src="q4.jpg" alt="Color Option 2"></a>
+                <a href="q2.html" class="link" target="_self"><img src="q7.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

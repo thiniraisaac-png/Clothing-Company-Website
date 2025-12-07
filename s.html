@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="s1.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="s1.jpg" alt="Thumbnail 1" onclick="changeMainImage('s1.jpg')">
+                <!--imageeee 2-->
+                <img src="s2.jpg" alt="Thumbnail 2" onclick="changeMainImage('s2.jpg')">
+                <!--imageeee 3-->
+                <img src="s3.jpg" alt="Thumbnail 2" onclick="changeMainImage('s3.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>COOFANDY Mens Short Sleeve Button Down Shirts Wrinkle Free Dress Shirts Casual Polka Dot Print Shirt with Pocket</h1>
+            <p class="price">LKR 3,000</p>
+            <p class="description"><br>  These mens dress shirts are made of lightweight, durable soft fabric, which is smooth and skin-friendly, making you comfortable to wear. Not easy to wrinkle, not easy to pilling. It is an essential basic shirt in your wardrobe.
+                <strong></strong></p>
+            <div class="payment-options">
+                
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Black / Black(windmill) / Blue(windmill)</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="s.html" class="link" target="_self"><img src="s1.jpg" alt="Color Option 1"></a>
+                <a href="s1.html" class="link" target="_self"><img src="s4.jpg" alt="Color Option 2"></a>
+                <a href="s2.html" class="link" target="_self"><img src="s7.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

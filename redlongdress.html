@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <!--main imageeee-->
+                <img id="mainImage" src="longdressredfront.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <!--imageeee 1-->
+                <img src="longdressredfront.jpg" alt="Thumbnail 1" onclick="changeMainImage('longdressredfront.jpg')">
+                <!--imageeee 2-->
+                <img src="longdressredback,jpg.jpg" alt="Thumbnail 2" onclick="changeMainImage('longdressredfront.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <!--product description-->
+            <h1>Women's High Neck Split Bodycon Mermaid Evening Cocktail Long Dress</h1>
+            <p class="price">LKR 3,000</p>
+            <p class="description"><br> Polyester/Spandex,Fabric is Elasticity,Stretchy,Comfortable. Perfecyly Fit For All The Occasions-Formal, Evening Prom, Party, Wedding, Cocktail, Night Club, Dating, Vacation, etc.
+                <strong></strong></p>
+            <div class="payment-options">
+                
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: Black / Blue / Red</p><!--coloursss-->
+            <div class="color-options">
+                <!--colormenu-->
+                <a href="blacklongdress.html" class="link" target="_self"><img src="longdressblackfront.jpg" alt="Color Option 1"></a>
+                <a href="bluelongdress.html" class="link" target="_self"><img src="longdressbluefront.jpg" alt="Color Option 2"></a>
+                <a href="redlongdress.html" class="link" target="_self"><img src="longdressredback,jpg.jpg" alt="Color Option 3"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

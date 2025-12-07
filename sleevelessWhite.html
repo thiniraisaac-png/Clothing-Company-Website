@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="cropTopDetails.css">
+    <script defer src="longsleeveTop.js"></script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <img id="mainImage" src="sleevelessWhite1.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <img src="sleevelessWhite1.jpg" alt="Thumbnail 1" onclick="changeMainImage('sleevelessWhite1.jpg')">
+                <img src="sleevelessWhite2.jpg" alt="Thumbnail 2" onclick="changeMainImage('sleevelessWhite2.jpg')">
+                <img src="sleevelessWhite3.jpg" alt="Thumbnail 2" onclick="changeMainImage('sleevelessWhite3.jpg')">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Sleeveless Crop Tops </h1>
+            <p class="price">LKR 2,000</p>
+            <p class="description"><br>Imported, V Neck Ribbed Sleeveless Tops Collar, skin-friendly, comfortable.<strong></strong></p>
+            <div class="payment-options">
+                
+            </div>
+            <p class="availability">AVAILABLE COLOR: BLACK / WHITE </p>
+            <div class="color-options">
+                <a href="sleevelessBlack.html" class="link" target="_self"><img src="sleevelessBlack1.jpg" alt="Color Option 1"></a>
+            </div>
+            <p class="size-options-title">AVAILABLE SIZE:</p>
+            <div class="size-options">
+                <button onclick="selectSize(this)">XS</button>
+                <button onclick="selectSize(this)">S</button>
+                <button class="active" onclick="selectSize(this)">M</button>
+                <button onclick="selectSize(this)">L</button>
+                <button onclick="selectSize(this)">XL</button>
+                <button onclick="selectSize(this)">2XL</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
